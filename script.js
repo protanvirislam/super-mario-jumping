@@ -2,7 +2,8 @@ const character = document.querySelector("lottie-player");
 const enemie = document.querySelector(".enemy-1");
 const start =document.querySelector(".start");
 const score_element = document.querySelector(".score");
-
+const gameOverSound = new Audio('music/gameover.mp3');
+const moveSound = new Audio('music/move.mp3');
 
 
 
@@ -22,6 +23,7 @@ let score = 0;
 
 
 function jump(e) {
+  moveSound.play()
   if (e.code === "Space") {
    
     if(isJumping) return;
@@ -84,10 +86,12 @@ function update() {
 
 
      if(!isJumping && getLeftValue === "23%" ) {
+      gameOverSound.play()
        alert("game Over !!! Your Score is : " + score);
        location.reload()
      }
      if(!isJumping && getLeftValue === "13%" ) {
+      gameOverSound.play()
        alert("game Over !!! Your Score is : " + score);
        location.reload()
      }

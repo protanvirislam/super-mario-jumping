@@ -34,7 +34,7 @@
 @media only screen and (max-width:700px) {
   .game-container {
     width: 100vw;
-    height: 80vh;
+    height: 700px;
   }
 }
 

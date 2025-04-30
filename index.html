@@ -6,13 +6,19 @@
     <!-- Lottie SVG animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
 
-
+    <!-- Font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Link Custom StyleSheet -->
-     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <title>Super Mario Action game</title>
   </head>
   <body>
-    
     <div class="container">
       <div class="game-container">
         <div class="score-dashboard">
@@ -21,18 +27,24 @@
         </div>
         <div class="start">Start</div>
         <div class="super-mario">
-            <lottie-player src="./asset/Animation - 1745845475004.json" background="transparent"  speed="0.5"  loop  autoplay></lottie-player>
+          <lottie-player
+            src="./asset/Animation - 1745845475004.json"
+            background="transparent"
+            speed="0.5"
+            loop
+            autoplay
+          ></lottie-player>
         </div>
 
         <div class="enemy-container">
-           <div class="enemy-1"></div>
-           <div class="enemy-2"></div>
-         
+          <div class="enemy-1"></div>
+          <div class="enemy-2"></div>
         </div>
+        <div class="jump-key"><i class="fa-solid fa-up-down"></i></div>
       </div>
     </div>
 
     <!-- Link Custom Script Js -->
-     <script src="./script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

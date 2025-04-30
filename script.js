@@ -4,6 +4,7 @@ const start =document.querySelector(".start");
 const score_element = document.querySelector(".score");
 const gameOverSound = new Audio('music/gameover.mp3');
 const moveSound = new Audio('music/move.mp3');
+const jump_key = document.querySelector(".jump-key");
 
 
 
@@ -24,6 +25,7 @@ let score = 0;
 
 function jump(e) {
   moveSound.play()
+  console.log(e.code)
   if (e.code === "Space") {
    
     if(isJumping) return;
@@ -137,4 +139,9 @@ function gameStart() {
 
 document.addEventListener("keydown", jump);
 
-start.addEventListener("click", gameStart)
+start.addEventListener("click", gameStart);
+
+jump_key.addEventListener("click", function() {
+  jump({code: "Space"});
+
+} )

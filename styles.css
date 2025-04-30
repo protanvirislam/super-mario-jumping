@@ -37,7 +37,21 @@
     height:300px;
     position:absolute;
     bottom: var(--mario-jump);
-    left: -50px;
+    left: 0px;
+}
+
+@media only screen and (max-width: 700px) {
+  .super-mario lottie-player{
+  left:  -50px;
+}
+
+.game-container{
+ 
+  width: 100vw;
+  height: 700px;
+  
+
+}
 }
 
 .enemy-container {

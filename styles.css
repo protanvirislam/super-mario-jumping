@@ -31,12 +31,6 @@
   
 }
 
-@media only screen and (max-width:700px) {
-  .game-container {
-    width: 100vw;
-    height: 700px;
-  }
-}
 
 .super-mario lottie-player{
     width:300px;
